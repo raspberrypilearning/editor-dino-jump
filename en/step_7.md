@@ -1,33 +1,21 @@
-## Test and tune your game
+## Challenge
 
-Check that the blocks work together, then change the difficulty so the game is easier or harder.
-
-> [!TASK]
->
-> Click the green flag and check that:
->
-> - `score`{:class="block3variables"} starts at `0`
-> - animated obstacles appear after one second and move from right to left
-> - the time between obstacles changes
-> - avoiding an obstacle adds `1` to `score`{:class="block3variables"}
-> - touching an obstacle plays your collision sound and stops the game
+Take your game further by changing its look and behaviour.
 
 > [!TASK]
 >
-> Adjust the starting value of `speed`{:class="block3variables"} in the obstacle's green flag script. A more negative number, such as `-7`, makes every clone move faster.
+> Personalise any choices you borrowed from the example. Your character, obstacle, and backdrop can all be different.
 
 > [!TASK]
 >
-> Adjust the two numbers in `pick random (0.8) to (2.4)`{:class="block3operators"}. Smaller numbers create obstacles more often, and larger numbers leave wider gaps.
-
-> [!TIP]
->
-> Faster obstacles and shorter gaps give the player less time to react, making the game more difficult.
+> Make the game harder by making the obstacle move faster as the `score`{:class="block3variables"} increases.
 
 > [!TASK]
 >
-> If the obstacle does not meet the character at the right height, adjust its starting `y` position. Keep its starting `x` position beyond the right edge so obstacles do not suddenly appear on the Stage.
+> Add a sound or animation when the character jumps or crashes.
 
 > [!TASK]
 >
-> **Test again** until the game is hard but you are still able to play it.
+> Share your finished game with a friend and ask them what they think.
+
+> [!SAVE]

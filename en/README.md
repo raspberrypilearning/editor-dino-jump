@@ -29,6 +29,7 @@ en/
 │   ├── .keep
 │   └── Dino Jump _ Tap jumper.sb3
 ├── README.md
+├── landing.md
 ├── meta.yml
 ├── step_1.md
 ├── step_2.md
@@ -36,8 +37,7 @@ en/
 ├── step_4.md
 ├── step_5.md
 ├── step_6.md
-├── step_7.md
-└── step_8.md
+└── step_7.md
 ```
 
 ## What is in this project?

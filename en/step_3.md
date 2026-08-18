@@ -1,34 +1,23 @@
-## Make the character jump
+## Add obstacles
 
-Make the character jump up and land back in the same place.
+Create an obstacle sprite that your character needs to jump over.
 
 > [!TASK]
 >
-> Select the character sprite. Add a new script that makes it glide upwards when the player presses the space key.
+> Choose any sprite to be an obstacle. This example uses `Bear-walking`, which has several costumes for a walking animation. You can choose your obstacle and what it looks like.
+
+> [!TASK]
 >
-> ![Giga Walking sprite.](images/Giga-Walk1.png){:width="100px" height="100px" style="object-fit: contain;"}
+> Select the obstacle and click the **Code** tab. Add these blocks to set its position, direction, and size.
+>
+> ![Bear-walking sprite.](images/Bear-walk-a.png){:width="100px" height="100px" style="object-fit: contain;"}
 >
 > ```blocks3
-> +when [space v] key pressed
-> +glide (0.3) secs to x: (-100) y: (80)
+> +when green flag clicked
+> +set rotation style [left-right v]
+> +set size to (25) %
+> +go to x: (280) y: (-85)
+> +point in direction (-90)
 > ```
 >
-> Use the same `x` position as the character's starting position. Choose a higher `y` position for the top of the jump. The example character starts at `x: -100`, `y: -70` and jumps to `y: 80`.
-
-> [!TASK]
->
-> Add another glide block to make the character land.
->
-> ![Giga Walking sprite.](images/Giga-Walk1.png){:width="100px" height="100px" style="object-fit: contain;"}
->
-> ```blocks3
-> when [space v] key pressed
-> glide (0.3) secs to x: (-100) y: (80)
-> +glide (0.7) secs to x: (-100) y: (-70)
-> ```
->
-> The final `x` and `y` values must be the same as the character's starting position in the green flag script.
-
-> [!TASK]
->
-> **Test your project.** The character should jump up and come back down when you press the space key.
+> The example position puts the obstacle just beyond the right edge of the Stage. Change the `y` position if your obstacle does not sit on the ground.

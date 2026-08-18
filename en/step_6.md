@@ -1,85 +1,33 @@
-## Detect collisions and keep score
+## Test and tune your game
 
-End the game when an obstacle touches the character, and award a point when the character avoids one.
-
-> [!TASK]
->
-> Add an `if`{:class="block3control"} block to check whether the obstacle is touching the character. Choose your character's name from the `touching`{:class="block3sensing"} menu. The example uses `Giga Walking`.
->
-> ```blocks3
-> when I start as a clone
-> show
-> repeat until <(x position) < (-200)>
->   next costume
->   change x by (speed)
-> +  if <touching (Giga Walking v)?> then
-> +    hide
-> +    stop [all v]
-> +  end
-> end
-> delete this clone
-> ```
+Check that the blocks work together, then change the difficulty so the game is easier or harder.
 
 > [!TASK]
 >
-> Select the obstacle. Open the **Sounds** tab, choose **Choose a Sound**, and add a collision sound. This example uses `Bite`, but you can choose any sound.
+> Click the green flag and check that:
 >
-> ![The Sounds tab at the top-left of the Scratch editor.](images/sounds_tab.png)
+> - `score`{:class="block3variables"} starts at `0`
+> - animated obstacles appear after one second and move from right to left
+> - the time between obstacles changes
+> - avoiding an obstacle adds `1` to `score`{:class="block3variables"}
+> - touching an obstacle plays your collision sound and stops the game
 
 > [!TASK]
 >
-> Add the sound inside the `if`{:class="block3control"} block, before `hide`{:class="block3looks"}.
->
-> ```blocks3
-> if <touching (Giga Walking v)?> then
-> +  start sound (Bite v)
->   hide
->   stop [all v]
-> end
-> ```
+> Adjust the starting value of `speed`{:class="block3variables"} in the obstacle's green flag script. A more negative number, such as `-7`, makes every clone move faster.
 
 > [!TASK]
 >
-> Open the `Variables`{:class="block3variables"} menu, select **Make a Variable**, and create a variable called `score`{:class="block3variables"} for all sprites.
+> Adjust the two numbers in `pick random (0.8) to (2.4)`{:class="block3operators"}. Smaller numbers create obstacles more often, and larger numbers leave wider gaps.
+
+> [!TIP]
 >
-> Set `score`{:class="block3variables"} to `0` in the obstacle's green flag script.
->
-> ```blocks3
-> when green flag clicked
-> set rotation style [left-right v]
-> set [speed v] to (-5)
-> +set [score v] to (0)
-> set size to (25) %
-> go to x: (280) y: (-85)
-> point in direction (-90)
-> hide
-> wait (1) seconds
-> forever
->   create clone of (myself v)
->   wait (pick random (0.8) to (2.4)) seconds
-> end
-> ```
+> Faster obstacles and shorter gaps give the player less time to react, making the game more difficult.
 
 > [!TASK]
 >
-> Add `change score by 1`{:class="block3variables"} just before `delete this clone`{:class="block3control"}. It will only run when the obstacle reaches the left side without touching the character.
->
-> ```blocks3
-> when I start as a clone
-> show
-> repeat until <(x position) < (-200)>
->   next costume
->   change x by (speed)
->   if <touching (Giga Walking v)?> then
->     start sound (Bite v)
->     hide
->     stop [all v]
->   end
-> end
-> +change [score v] by (1)
-> delete this clone
-> ```
+> If the obstacle does not meet the character at the right height, adjust its starting `y` position. Keep its starting `x` position beyond the right edge so obstacles do not suddenly appear on the Stage.
 
 > [!TASK]
 >
-> **Test your project.** Avoiding an obstacle should add one to `score`{:class="block3variables"}. Touching one should play the collision sound and stop the game.
+> **Test again** until the game is hard but you are still able to play it.

@@ -6,7 +6,6 @@ description: >-
 listed: false
 pdf: false
 steps:
-  - title: What you will make
   - title: Add the character and backdrop
     completion:
       - engaged
@@ -19,5 +18,5 @@ steps:
   - title: Test and tune your game
     completion:
       - external
-  - title: Challenge!
+  - title: Challenge
     challenge: true
