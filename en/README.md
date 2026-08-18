@@ -15,8 +15,8 @@ en/
 │       └── project_config.yml
 ├── images/
 │   ├── .keep
-│   ├── Bear-walk-a.png
-│   ├── Giga-Walk1.png
+│   ├── Dinosaur5-a.png
+│   ├── Pico-a.png
 │   ├── backdrop-choose.png
 │   ├── banner.png
 │   ├── make-a-variable.png
