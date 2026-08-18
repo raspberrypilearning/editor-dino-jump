@@ -1,45 +1,47 @@
-## What you will make
-OR
-## What you will do - change meta if you use this
+## Add the character and backdrop
 
-A brief description - one or two sentences. 
+Open the starter project and add a character sprite and a backdrop.
 
---- print-only ---
+> [!TASK]
+>
+> Open the [Dino Jump starter project](https://editor.raspberrypi.org/en/projects/editor-dino-jump-starter){:target="_blank"} in a new tab. It opens with an empty Stage and no sprites.
 
-![ALT TEXT](images/IMAGE.png)
+> [!TASK]
+>
+> Add any character with **Choose a Sprite**. This example uses `Giga Walking`, but you can choose how you would like your character to look.
+>
+> ![The Choose a Sprite button in the bottom-right of the Scratch editor.](images/sprite-choose.png)
 
---- /print-only ---
+> [!TASK]
+>
+> Add any backdrop with **Choose a Backdrop**. This example uses `Desert`, but choose a setting that suits your game.
+>
+> ![The Choose a Backdrop button in the bottom-right of the Scratch editor.](images/backdrop-choose.png)
 
---- no-print ---
+> [!TASK]
+>
+> Place the character near the bottom of the Stage.
+>
+> ![Giga Walking sprite.](images/Giga-Walk1.png){:width="100px" height="100px" style="object-fit: contain;"}
 
-[Editor embed](https://editor.raspberrypi.org/en/embed/viewer/project-slug)
+> [!TASK]
+>
+> Select the character and click the **Code** tab. Add these blocks to set its position, direction, and size.
+>
+> ```blocks3
+> +when green flag clicked
+> +show
+> +go to x: (-100) y: (-70)
+> +point in direction (90)
+> +set size to (100) %
+> ```
+>
+> These values place the example character near the ground. Adjust the position and size if your character or backdrop is different.
 
---- /no-print ---
+> [!TIP]
+>
+> This is your **starting state**. It resets when you click the green flag before the game begins.
 
---- no-print ---
-
-Video embed
-
-<video width="640" height="360" controls>
-<source src="images/videoname.mp4" type="video/mp4">
-</video>
-
-Youtube embed 
-<html>
-<div style="position: relative; overflow: hidden; padding-top: 56.25%;">
-<iframe style="position: absolute; top: 0; left: 0; right: 0; width: 100%; height: 100%; border: none;" src="https://www.youtube.com/embed/XXXXXXXXX?rel=0&cc_load_policy=1" allowfullscreen allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share">
-</iframe>
-</div><br>
-</html>
-
-Scratch embed
-<div class="scratch-preview">
- <iframe allowtransparency="true" width="485" height="402" src="https://scratch.mit.edu/projects/embed/XXXXXXXXX/?autostart=false" frameborder="0"></iframe>
-</div>
-
---- /no-print ---
-
-### You will need:
-- a
-- b
-- c
+> [!TASK]
+>
+> **Test your project.** The character should appear in the same place each time you click the green flag.
