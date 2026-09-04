@@ -1,28 +1,20 @@
-## Detect a collision
+## Randomise the gaps
 
-End the game if an obstacle touches the character.
+Make the time between obstacles less predictable.
 
 ![Dinosaur5 sprite.](images/Dinosaur5-a.png)
 
-Inside the clone's movement loop, add an `if then`{:class="block3control"} block that checks whether the obstacle is `touching ()`{:class="block3sensing"} your character.
-
-If it is, hide the obstacle and `stop all`{:class="block3control"} scripts.
+In the obstacle's `forever`{:class="block3control"} loop, replace the second `wait () seconds`{:class="block3control"} block with one that contains a `pick random () to ()`{:class="block3operators"} block.
 
 ```blocks3
-repeat until <(x position) < (-200)>
-next costume
-change x by (speed)
-+if <touching (Pico v)?> then
-hide
-stop [all v]
-end
+forever
+create clone of (myself v)
++wait (pick random (0.8) to (2.4)) seconds
 end
 ```
 
-Choose your character's name from the `touching ()`{:class="block3sensing"} menu. The example uses `Pico`.
-
 ## Now run your code
 
-Click the green flag and let an obstacle reach your character.
+Click the green flag and watch when each obstacle appears.
 
-The game stops when they touch.
+The first clone still appears after one second. After that, clones appear at random intervals between the two numbers you chose.

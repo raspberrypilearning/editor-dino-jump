@@ -7,23 +7,32 @@ steps:
   - title: Add a character
     completion:
       - engaged
-  - title: Set the scene
+  - title: Choose a backdrop
   - title: Set the starting position
+  - title: Set the character's starting look
   - title: Jump into the air
   - title: Land the jump
   - title: Add an obstacle
+  - title: Size and position the obstacle
+  - title: Make the obstacle face left
+  - title: Hide the original obstacle
   - title: Create obstacle clones
   - title: Show each obstacle
   - title: Randomise the gaps
   - title: Set the obstacle speed
   - title: Move the obstacles
+  - title: Remove old obstacles
   - title: Animate the obstacles
   - title: Detect a collision
+  - title: Stop after a collision
   - title: Add a collision sound
-  - title: Set up the score
+  - title: Make the score variable
+  - title: Reset the score
   - title: Score avoided obstacles
   - title: Test the whole game
-  - title: Tune the difficulty
+  - title: Tune the obstacle speed
+  - title: Tune the gaps
+  - title: Tune the obstacle height
     completion:
       - internal
   - title: Make it your own

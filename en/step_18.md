@@ -1,25 +1,23 @@
-## Tune the difficulty
+## Detect a collision
 
-Adjust your game until it is challenging but still fun to play.
+Detect when an obstacle catches the character.
 
-## Step 1
+![Dinosaur5 sprite.](images/Dinosaur5-a.png)
 
-Change the starting value of `speed`{:class="block3variables"} in the obstacle's setup script.
+Inside the clone's movement loop, add an `if then`{:class="block3control"} block that checks whether the obstacle is `touching ()`{:class="block3sensing"} your character.
 
-A more negative number, such as `-7`, makes every clone move faster.
+If it is, hide the obstacle.
 
-## Step 2
+```blocks3
+repeat until <(x position) < (-200)>
+next costume
+change x by (speed)
++if <touching (Pico v)?> then
+hide
+end
+end
+```
 
-Change the two numbers in `pick random () to ()`{:class="block3operators"}.
+Choose your character's name from the `touching ()`{:class="block3sensing"} menu. The example uses `Pico`.
 
-Smaller numbers create obstacles more often, while larger numbers leave wider gaps.
-
-## Step 3
-
-If the obstacle does not meet the character at the right height, adjust its starting `y` position.
-
-Keep its starting `x` position beyond the right edge so obstacles do not suddenly appear on the Stage.
-
-## Now run your code
-
-Play several times and keep adjusting the values until the game feels right.
+You'll stop the rest of the game after a collision in the next step.

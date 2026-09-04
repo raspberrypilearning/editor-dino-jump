@@ -1,23 +1,23 @@
-## Set up the score
+## Move the obstacles
 
-Keep track of how many obstacles the player avoids.
+Move each clone across the Stage.
 
 ![Dinosaur5 sprite.](images/Dinosaur5-a.png)
 
-Make a new variable called `score`{:class="block3variables"}, **For all sprites**.
+In the clone script, add a `repeat until`{:class="block3control"} loop that checks whether the clone's `x position`{:class="block3motion"} is less than `-200`.
 
-Keep its checkbox ticked so the player can see it.
-
-In the obstacle's setup script, set `score`{:class="block3variables"} to `0` when the green flag is clicked.
+Inside the loop, change its x position by `speed`{:class="block3variables"}.
 
 ```blocks3
-when green flag clicked
-set rotation style [left-right v]
-set [speed v] to (-5)
-+set [score v] to (0)
-set size to (25) %
-go to x: (280) y: (-85)
-point in direction (-90)
+when I start as a clone
+show
++repeat until <(x position) < (-200)>
+change x by (speed)
+end
 ```
 
-The score now resets at the start of every game. You'll award points in the next step.
+## Now run your code
+
+Click the green flag.
+
+Each obstacle moves from right to left until it passes the character.

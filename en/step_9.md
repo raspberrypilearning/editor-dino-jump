@@ -1,20 +1,17 @@
-## Randomise the gaps
+## Make the obstacle face left
 
-Obstacles that appear at different times make the game less predictable.
+Turn the obstacle so it faces towards the character.
 
 ![Dinosaur5 sprite.](images/Dinosaur5-a.png)
 
-In the obstacle's `forever`{:class="block3control"} loop, replace the second `wait () seconds`{:class="block3control"} block with one that contains a `pick random () to ()`{:class="block3operators"} block.
+Add a `set rotation style ()`{:class="block3motion"} block and a `point in direction ()`{:class="block3motion"} block to the obstacle's setup script.
 
 ```blocks3
-forever
-create clone of (myself v)
-+wait (pick random (0.8) to (2.4)) seconds
-end
+when green flag clicked
++set rotation style [left-right v]
+set size to (25) %
+go to x: (280) y: (-85)
++point in direction (-90)
 ```
 
-## Now run your code
-
-Click the green flag and watch when each obstacle appears.
-
-The first clone still appears after one second. After that, clones appear at random intervals between the two numbers you chose.
+The left-right rotation style keeps the obstacle upright when it points left.

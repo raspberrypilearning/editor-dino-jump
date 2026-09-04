@@ -1,23 +1,20 @@
-## Animate the obstacles
+## Show each obstacle
 
-Use the obstacle's costumes to animate it as it moves.
+Make each new obstacle clone appear on the Stage.
 
 ![Dinosaur5 sprite.](images/Dinosaur5-a.png)
 
-Inside the clone's `repeat until`{:class="block3control"} loop, add a `next costume`{:class="block3looks"} block before the movement block.
+Start a new script on the obstacle sprite with a `when I start as a clone`{:class="block3control"} block.
+
+Add a `show`{:class="block3looks"} block so each clone becomes visible.
 
 ```blocks3
 when I start as a clone
 show
-repeat until <(x position) < (-200)>
-+next costume
-change x by (speed)
-end
-delete this clone
 ```
 
 ## Now run your code
 
 Click the green flag.
 
-Each obstacle changes costume as it travels across the Stage.
+Obstacle clones appear on the right once every second, but they do not move yet.

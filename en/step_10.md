@@ -1,24 +1,18 @@
-## Set the obstacle speed
+## Hide the original obstacle
 
-Store the movement speed in a variable so it is easy to change later.
+Hide the original obstacle so only its clones appear in the game.
 
 ![Dinosaur5 sprite.](images/Dinosaur5-a.png)
 
-Make a new variable called `speed`{:class="block3variables"}, **For all sprites**.
-
-Untick its checkbox to hide it from the player.
-
-![The Make a Variable button in the Variables menu.](images/make-a-variable.png)
-
-In the obstacle's setup script, set `speed`{:class="block3variables"} to `-5`.
+Add a `hide`{:class="block3looks"} block to the end of the obstacle's setup script.
 
 ```blocks3
 when green flag clicked
 set rotation style [left-right v]
-+set [speed v] to (-5)
 set size to (25) %
 go to x: (280) y: (-85)
 point in direction (-90)
++hide
 ```
 
-A negative speed will make the clones move to the left.
+Click the green flag. The original obstacle disappears from the Stage.

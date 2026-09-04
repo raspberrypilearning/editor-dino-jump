@@ -1,15 +1,20 @@
-## Make it your own
+## Stop after a collision
 
-You've finished the game — now make it your own!
+Stop the game when an obstacle touches the character.
 
-Here are some ideas to take Dino Jump further.
+![Dinosaur5 sprite.](images/Dinosaur5-a.png)
 
-You don't have to try them all; pick the ones that sound the most fun.
+Add `stop all`{:class="block3control"} after the `hide`{:class="block3looks"} block inside the collision check.
 
-- Change the character, obstacle, or backdrop to give your game a new theme.
-- Make the obstacles move faster as `score`{:class="block3variables"} increases.
-- Add a sound or costume animation when the character jumps.
-- Add a game-over backdrop before the scripts stop.
-- Share your finished game with a friend and ask what they think.
+```blocks3
+if <touching (Pico v)?> then
+hide
++stop [all v]
+end
+```
 
-Remember to save your project.
+## Now run your code
+
+Click the green flag and let an obstacle reach your character.
+
+The game stops when they touch.

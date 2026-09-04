@@ -1,23 +1,23 @@
-## Add an obstacle
+## Land the jump
 
-Create something for your character to jump over.
+Bring your character back to the ground to finish the jump.
 
-Choose any sprite to be an obstacle.
+![Pico sprite.](images/Pico-a.png)
 
-This example uses `Dinosaur5`{:class="block3looks"}, which has several costumes so it can animate as it moves.
+Add another `glide () secs to x: () y: ()`{:class="block3motion"} block to the bottom of the space-key script.
 
-![Dinosaur5 sprite.](images/Dinosaur5-a.png)
-
-Click on your obstacle sprite, then click the `Code`{:class="block3control"} tab.
-
-Add a script to set its rotation style, size, position, and direction.
+Use the character's starting `x` and `y` positions as its destination.
 
 ```blocks3
-when green flag clicked
-set rotation style [left-right v]
-set size to (25) %
-go to x: (280) y: (-85)
-point in direction (-90)
+when [space v] key pressed
+glide (0.3) secs to x: (-100) y: (80)
++glide (0.7) secs to x: (-100) y: (-70)
 ```
 
-The example position puts the obstacle just beyond the right edge of the Stage. Change the `y` position if your obstacle does not sit on the ground.
+Adjust the glide times and the height of the jump until your sprite jumps the way you want it to.
+
+## Now run your code
+
+Press the space bar.
+
+Your character jumps up and lands back in the same place.

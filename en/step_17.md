@@ -1,14 +1,23 @@
-## Test the whole game
+## Animate the obstacles
 
-Check that all your scripts work together.
+Use the obstacle's costumes to animate it as it moves.
 
-Click the green flag and make sure:
+![Dinosaur5 sprite.](images/Dinosaur5-a.png)
 
-- `score`{:class="block3variables"} starts at `0`
-- animated obstacles appear after one second and move from right to left
-- the time between obstacles changes
-- pressing the space bar makes the character jump and land
-- avoiding an obstacle adds `1` to `score`{:class="block3variables"}
-- touching an obstacle plays your collision sound and stops the game
+Inside the clone's `repeat until`{:class="block3control"} loop, add a `next costume`{:class="block3looks"} block before the movement block.
 
-Fix any blocks that do not behave as expected, then play again.
+```blocks3
+when I start as a clone
+show
+repeat until <(x position) < (-200)>
++next costume
+change x by (speed)
+end
+delete this clone
+```
+
+## Now run your code
+
+Click the green flag.
+
+Each obstacle changes costume as it travels across the Stage.

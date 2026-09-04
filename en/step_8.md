@@ -1,20 +1,17 @@
-## Show each obstacle
+## Size and position the obstacle
 
-Give every new obstacle clone its own script.
+Place the obstacle just outside the right side of the Stage.
 
 ![Dinosaur5 sprite.](images/Dinosaur5-a.png)
 
-Start a new script on the obstacle sprite with a `when I start as a clone`{:class="block3control"} block.
+Click on your obstacle sprite, then click the `Code`{:class="block3control"} tab.
 
-Add a `show`{:class="block3looks"} block so each clone becomes visible.
+Add a script to set its size and position.
 
 ```blocks3
-when I start as a clone
-show
+when green flag clicked
+set size to (25) %
+go to x: (280) y: (-85)
 ```
 
-## Now run your code
-
-Click the green flag.
-
-Obstacle clones appear on the right once every second, but they do not move yet.
+The example position puts the obstacle just beyond the right edge. You'll tune its height near the end of the project.

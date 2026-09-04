@@ -1,22 +1,25 @@
-## Jump into the air
+## Set the character's starting look
 
-Make your character move upwards when the player presses the space bar.
+Make your character face the right way and start at a suitable size.
 
 ![Pico sprite.](images/Pico-a.png)
 
 Click on your character sprite.
 
-Add a new script with a `when space key pressed`{:class="block3events"} block and a `glide () secs to x: () y: ()`{:class="block3motion"} block.
+Add a `point in direction ()`{:class="block3motion"} block and a `set size to () %`{:class="block3looks"} block to the character's starting script.
 
 ```blocks3
-when [space v] key pressed
-glide (0.3) secs to x: (-100) y: (80)
+when green flag clicked
+show
+go to x: (-100) y: (-70)
++point in direction (90)
++set size to (100) %
 ```
 
-Use the same `x` position as the character's starting position. Choose a higher `y` position for the top of the jump.
+Adjust the direction and size until your character looks right in its starting position.
 
 ## Now run your code
 
-Press the space bar.
+Click the green flag.
 
-Your character glides upwards and stays in the air. You'll make it land in the next step.
+Your character starts in the position and at the size you chose. This position, direction, and size make up its **starting state**.

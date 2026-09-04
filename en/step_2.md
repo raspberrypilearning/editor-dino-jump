@@ -1,4 +1,4 @@
-## Set the scene
+## Choose a backdrop
 
 Choose where your jumping game will take place.
 
@@ -8,8 +8,4 @@ This example uses `Desert`{:class="block3looks"}, but choose a setting that suit
 
 ![The Choose a Backdrop button in the bottom-right of the Scratch editor.](images/backdrop-choose.png)
 
-Drag your character near the bottom-left of the Stage so there is plenty of room for obstacles to approach.
-
-![Pico sprite.](images/Pico-a.png)
-
-You'll make the character return to this starting area whenever the game begins in the next step.
+Your backdrop appears on the Stage. You'll position your character in the next step.

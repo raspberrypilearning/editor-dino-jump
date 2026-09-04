@@ -1,26 +1,25 @@
-## Move the obstacles
+## Create obstacle clones
 
-Move each clone across the Stage, then remove it when it has gone past the character.
+Use clones to make a stream of obstacles.
 
 ![Dinosaur5 sprite.](images/Dinosaur5-a.png)
 
-In the clone script, add a `repeat until`{:class="block3control"} loop that checks whether the clone's `x position`{:class="block3motion"} is less than `-200`.
+In the obstacle's setup script, wait for one second before starting a `forever`{:class="block3control"} loop.
 
-Inside the loop, change its x position by `speed`{:class="block3variables"}.
-
-After the loop, add `delete this clone`{:class="block3control"} so old clones do not build up.
+Inside the loop, create a clone and wait for one second before making the next one.
 
 ```blocks3
-when I start as a clone
-show
-+repeat until <(x position) < (-200)>
-change x by (speed)
+when green flag clicked
+set rotation style [left-right v]
+set size to (25) %
+go to x: (280) y: (-85)
+point in direction (-90)
+hide
++wait (1) seconds
++forever
+create clone of (myself v)
+wait (1) seconds
 end
-+delete this clone
 ```
 
-## Now run your code
-
-Click the green flag.
-
-Obstacles move from right to left and disappear after passing the character.
+A clone is a copy of a sprite. Each clone starts hidden because the original obstacle is hidden.

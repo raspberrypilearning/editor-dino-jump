@@ -4,7 +4,7 @@
 
 Make a jumping game in this Code Club arcade project.
 
-The project is written as a granular Raspberry Pi Code Editor tutorial, with starter and completed Scratch projects, learner-facing images, and 19 short steps.
+The project is written as a granular Raspberry Pi Code Editor tutorial, with starter and completed Scratch projects, learner-facing images, and 28 short steps.
 
 ## Project files
 
