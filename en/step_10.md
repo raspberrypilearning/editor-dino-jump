@@ -2,7 +2,7 @@
 
 Hide the original obstacle so only its clones appear in the game.
 
-![Dinosaur5 sprite.](images/Dinosaur5-a.png)
+![Dinosaur5 sprite.](images/Dinosaur5-a.png){:width="100px" height="100px" style="object-fit: contain;"}
 
 Add a `hide`{:class="block3looks"} block to the end of the obstacle's setup script.
 

@@ -2,7 +2,7 @@
 
 Detect when an obstacle catches the character.
 
-![Dinosaur5 sprite.](images/Dinosaur5-a.png)
+![Dinosaur5 sprite.](images/Dinosaur5-a.png){:width="100px" height="100px" style="object-fit: contain;"}
 
 Inside the clone's movement loop, add an `if then`{:class="block3control"} block that checks whether the obstacle is `touching ()`{:class="block3sensing"} your character.
 

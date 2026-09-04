@@ -2,7 +2,7 @@
 
 Make every game begin with a score of zero.
 
-![Dinosaur5 sprite.](images/Dinosaur5-a.png)
+![Dinosaur5 sprite.](images/Dinosaur5-a.png){:width="100px" height="100px" style="object-fit: contain;"}
 
 In the obstacle's setup script, set `score`{:class="block3variables"} to `0` when the green flag is clicked.
 

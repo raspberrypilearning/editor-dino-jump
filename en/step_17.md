@@ -2,7 +2,7 @@
 
 Use the obstacle's costumes to animate it as it moves.
 
-![Dinosaur5 sprite.](images/Dinosaur5-a.png)
+![Dinosaur5 sprite.](images/Dinosaur5-a.png){:width="100px" height="100px" style="object-fit: contain;"}
 
 Inside the clone's `repeat until`{:class="block3control"} loop, add a `next costume`{:class="block3looks"} block before the movement block.
 

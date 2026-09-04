@@ -2,7 +2,7 @@
 
 Bring your character back to the ground to finish the jump.
 
-![Pico sprite.](images/Pico-a.png)
+![Pico sprite.](images/Pico-a.png){:width="100px" height="100px" style="object-fit: contain;"}
 
 Add another `glide () secs to x: () y: ()`{:class="block3motion"} block to the bottom of the space-key script.
 

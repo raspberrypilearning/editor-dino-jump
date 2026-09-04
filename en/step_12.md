@@ -2,7 +2,7 @@
 
 Make each new obstacle clone appear on the Stage.
 
-![Dinosaur5 sprite.](images/Dinosaur5-a.png)
+![Dinosaur5 sprite.](images/Dinosaur5-a.png){:width="100px" height="100px" style="object-fit: contain;"}
 
 Start a new script on the obstacle sprite with a `when I start as a clone`{:class="block3control"} block.
 

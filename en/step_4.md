@@ -2,7 +2,7 @@
 
 Make your character face the right way and start at a suitable size.
 
-![Pico sprite.](images/Pico-a.png)
+![Pico sprite.](images/Pico-a.png){:width="100px" height="100px" style="object-fit: contain;"}
 
 Click on your character sprite.
 

@@ -2,7 +2,7 @@
 
 Play a sound when an obstacle catches the character.
 
-![Dinosaur5 sprite.](images/Dinosaur5-a.png)
+![Dinosaur5 sprite.](images/Dinosaur5-a.png){:width="100px" height="100px" style="object-fit: contain;"}
 
 Click on your obstacle sprite, then open the `Sounds`{:class="block3sound"} tab.
 

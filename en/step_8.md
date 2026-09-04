@@ -2,7 +2,7 @@
 
 Place the obstacle just outside the right side of the Stage.
 
-![Dinosaur5 sprite.](images/Dinosaur5-a.png)
+![Dinosaur5 sprite.](images/Dinosaur5-a.png){:width="100px" height="100px" style="object-fit: contain;"}
 
 Click on your obstacle sprite, then click the `Code`{:class="block3control"} tab.
 

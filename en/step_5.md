@@ -2,7 +2,7 @@
 
 Make your character move upwards when the player presses the space bar.
 
-![Pico sprite.](images/Pico-a.png)
+![Pico sprite.](images/Pico-a.png){:width="100px" height="100px" style="object-fit: contain;"}
 
 Add a new script with a `when space key pressed`{:class="block3events"} block and a `glide () secs to x: () y: ()`{:class="block3motion"} block.
 

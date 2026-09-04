@@ -2,7 +2,7 @@
 
 Store the movement speed in a variable so it is easy to change later.
 
-![Dinosaur5 sprite.](images/Dinosaur5-a.png)
+![Dinosaur5 sprite.](images/Dinosaur5-a.png){:width="100px" height="100px" style="object-fit: contain;"}
 
 Make a new variable called `speed`{:class="block3variables"}, **For all sprites**.
 
