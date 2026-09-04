@@ -1,34 +1,15 @@
-## Make the character jump
+## Set the scene
 
-Make the character jump up and land back in the same place.
+Choose where your jumping game will take place.
 
-> [!TASK]
->
-> Select the character sprite. Add a new script that makes it glide upwards when the player presses the space key.
->
-> ![Pico sprite.](images/Pico-a.png){:width="100px" height="100px" style="object-fit: contain;"}
->
-> ```blocks3
-> +when [space v] key pressed
-> +glide (0.3) secs to x: (-100) y: (80)
-> ```
->
-> Use the same `x` position as the character's starting position. Choose a higher `y` position for the top of the jump. The example character starts at `x: -100`, `y: -70` and jumps to `y: 80`.
+Add any backdrop with **Choose a Backdrop**.
 
-> [!TASK]
->
-> Add another glide block to make the character land.
->
-> ![Pico sprite.](images/Pico-a.png){:width="100px" height="100px" style="object-fit: contain;"}
->
-> ```blocks3
-> when [space v] key pressed
-> glide (0.3) secs to x: (-100) y: (80)
-> +glide (0.7) secs to x: (-100) y: (-70)
-> ```
->
-> The final `x` and `y` values must be the same as the character's starting position in the green flag script.
+This example uses `Desert`{:class="block3looks"}, but choose a setting that suits your game.
 
-> [!TASK]
->
-> **Test your project.** The character should jump up and come back down when you press the space key.
+![The Choose a Backdrop button in the bottom-right of the Scratch editor.](images/backdrop-choose.png)
+
+Drag your character near the bottom-left of the Stage so there is plenty of room for obstacles to approach.
+
+![Pico sprite.](images/Pico-a.png)
+
+You'll make the character return to this starting area whenever the game begins in the next step.

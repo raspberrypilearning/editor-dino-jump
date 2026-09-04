@@ -1,8 +1,6 @@
-# Dino Jump
+# Project Structure
 
-This folder contains the learning materials for the Dino Jump Scratch project.
-
-## Project contents
+This repository contains the learning materials and Scratch projects for Dino jump.
 
 ```plaintext
 en/
@@ -32,21 +30,40 @@ en/
 ├── landing.md
 ├── meta.yml
 ├── step_1.md
-├── step_2.md
-├── step_3.md
-├── step_4.md
-├── step_5.md
-├── step_6.md
-└── step_7.md
+├── ...
+└── step_19.md
 ```
 
-## What is in this project?
+## Directory and File Descriptions
 
-The tutorials guide learners through building a simple Dino Jump game in Scratch, including:
+### `code/`
 
-- opening the starter project
-- adding a character sprite and backdrop
-- making the character jump
-- adding obstacles
-- adding scoring and a game-over condition
-- customising and sharing the finished game
+Contains the starter and completed Scratch projects used in the Raspberry Pi Code Editor.
+
+- Each project is in its own descriptive subdirectory.
+- Each subdirectory contains an `.sb3` file and a `project_config.yml` file.
+- Each configuration defines the project `name`, unique `identifier`, editor `type`, and whether the project should be built.
+
+### `images/`
+
+Stores the banner and supporting images used by the project instructions.
+
+### `resources/`
+
+Contains any supporting resources for the project.
+
+### `solutions/`
+
+Contains a completed version of the Scratch project.
+
+### `meta.yml`
+
+Defines the project title, description, hero image, ordered step titles, and completion markers used for publishing.
+
+### `landing.md`
+
+Introduces the project and shows a preview of the finished game.
+
+### `step_1.md` to `step_19.md`
+
+Contain the step-by-step instructions for learners. Each file focuses on one small outcome.

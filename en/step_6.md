@@ -1,33 +1,23 @@
-## Test and tune your game
+## Add an obstacle
 
-Check that the blocks work together, then change the difficulty so the game is easier or harder.
+Create something for your character to jump over.
 
-> [!TASK]
->
-> Click the green flag and check that:
->
-> - `score`{:class="block3variables"} starts at `0`
-> - animated obstacles appear after one second and move from right to left
-> - the time between obstacles changes
-> - avoiding an obstacle adds `1` to `score`{:class="block3variables"}
-> - touching an obstacle plays your collision sound and stops the game
+Choose any sprite to be an obstacle.
 
-> [!TASK]
->
-> Adjust the starting value of `speed`{:class="block3variables"} in the obstacle's green flag script. A more negative number, such as `-7`, makes every clone move faster.
+This example uses `Dinosaur5`{:class="block3looks"}, which has several costumes so it can animate as it moves.
 
-> [!TASK]
->
-> Adjust the two numbers in `pick random (0.8) to (2.4)`{:class="block3operators"}. Smaller numbers create obstacles more often, and larger numbers leave wider gaps.
+![Dinosaur5 sprite.](images/Dinosaur5-a.png)
 
-> [!TIP]
->
-> Faster obstacles and shorter gaps give the player less time to react, making the game more difficult.
+Click on your obstacle sprite, then click the `Code`{:class="block3control"} tab.
 
-> [!TASK]
->
-> If the obstacle does not meet the character at the right height, adjust its starting `y` position. Keep its starting `x` position beyond the right edge so obstacles do not suddenly appear on the Stage.
+Add a script to set its rotation style, size, position, and direction.
 
-> [!TASK]
->
-> **Test again** until the game is hard but you are still able to play it.
+```blocks3
+when green flag clicked
+set rotation style [left-right v]
+set size to (25) %
+go to x: (280) y: (-85)
+point in direction (-90)
+```
+
+The example position puts the obstacle just beyond the right edge of the Stage. Change the `y` position if your obstacle does not sit on the ground.

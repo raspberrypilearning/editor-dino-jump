@@ -1,18 +1,27 @@
-# default-project-template
+# Dino jump
 
-![default-project-template](banner.png)
+![Dino jump](banner.png)
 
-Find the project online at [projects.raspberrypi.org/en/projects/default-project-template](https://projects.raspberrypi.org/en/projects/default-project-template)
+Make a jumping game in this Code Club arcade project.
 
-## Resources
-For project materials and solutions, see [en/resources](https://github.com/raspberrypilearning/default-project-template/tree/master/en/resources) and [en/solutions](https://github.com/raspberrypilearning/default-project-template/tree/master/en/solutions).
+The project is written as a granular Raspberry Pi Code Editor tutorial, with starter and completed Scratch projects, learner-facing images, and 19 short steps.
+
+## Project files
+
+- The English tutorial starts at [en/landing.md](en/landing.md).
+- Project metadata and step order are defined in [en/meta.yml](en/meta.yml).
+- Starter and completed Scratch projects are in [en/code](en/code).
+- Supporting materials are in [en/resources](en/resources).
+- The completed learner solution is in [en/solutions](en/solutions).
 
 ## Contributing
-See [CONTRIBUTING.md](CONTRIBUTING.md)
+
+See [CONTRIBUTING.md](CONTRIBUTING.md).
 
 ## Licence
-See [LICENCE.md](LICENCE.md)
 
-## Setting up a Crowdin project
+See [LICENCE.md](LICENCE.md).
 
-See [CROWDIN.md](CROWDIN.md).
+## Translations
+
+See [CROWDIN.md](CROWDIN.md) for Crowdin setup and translation guidance.

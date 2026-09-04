@@ -1,9 +1,11 @@
-Build a **Dino Jump** game where a character jumps over obstacles.
+Build a **Dino Jump** game where a character leaps over moving obstacles and scores a point for every one they avoid.
 
-> [!NOPRINT]
->
-> [Editor embed](https://editor.raspberrypi.org/en/embed/viewer/editor-dino-jump-complete)
+Have a play with the finished game to see what you'll make.
 
-> [!PRINTONLY]
->
-> ![The finished Dino Jump game.](images/banner.png)
+--- no-print ---
+
+<div class="scratch-preview">
+ <iframe allowtransparency="true" width="485" height="402" src="https://scratch.mit.edu/projects/embed/1351632733/?autostart=false" frameborder="0"></iframe>
+</div>
+
+--- /no-print ---

@@ -1,23 +1,23 @@
-## Add obstacles
+## Set the starting position
 
-Create an obstacle sprite that your character needs to jump over.
+Make your character start every game in the same place.
 
-> [!TASK]
->
-> Choose any sprite to be an obstacle. This example uses `Dinosaur5`, which has several costumes so it can animate as it moves. You can choose your obstacle and what it looks like.
+Click on your character sprite, then click the `Code`{:class="block3control"} tab.
 
-> [!TASK]
->
-> Select the obstacle and click the **Code** tab. Add these blocks to set its position, direction, and size.
->
-> ![Dinosaur5 sprite.](images/Dinosaur5-a.png){:width="100px" height="100px" style="object-fit: contain;"}
->
-> ```blocks3
-> +when green flag clicked
-> +set rotation style [left-right v]
-> +set size to (25) %
-> +go to x: (280) y: (-85)
-> +point in direction (-90)
-> ```
->
-> The example position puts the obstacle just beyond the right edge of the Stage. Change the `y` position if your obstacle does not sit on the ground.
+Add a script to show the character, place it near the ground, point it right, and set its size.
+
+```blocks3
+when green flag clicked
+show
+go to x: (-100) y: (-70)
+point in direction (90)
+set size to (100) %
+```
+
+These values suit Pico and make up your **starting state**. Clicking the green flag resets them before each game. Adjust the starting position, direction, and size until you're happy with how your sprite looks. A different sprite or backdrop may need different values.
+
+## Now run your code
+
+Click the green flag a few times.
+
+Your character returns to the same starting position each time.

@@ -1,22 +1,32 @@
-title: Dino Jump
+title: Dino jump
 hero_image: images/banner.png
-description: >-
-  Build a fast-paced jump game where a character leaps over obstacles and tries
-  to survive as long as possible.
-listed: false
+description: Make a jumping game in this Code Club arcade project.
+listed: true
 pdf: false
 steps:
-  - title: Add the character and backdrop
+  - title: Add a character
     completion:
       - engaged
-  - title: Make the character jump
-  - title: Add obstacles
-  - title: Make the obstacles move
+  - title: Set the scene
+  - title: Set the starting position
+  - title: Jump into the air
+  - title: Land the jump
+  - title: Add an obstacle
+  - title: Create obstacle clones
+  - title: Show each obstacle
+  - title: Randomise the gaps
+  - title: Set the obstacle speed
+  - title: Move the obstacles
+  - title: Animate the obstacles
+  - title: Detect a collision
+  - title: Add a collision sound
+  - title: Set up the score
+  - title: Score avoided obstacles
+  - title: Test the whole game
+  - title: Tune the difficulty
     completion:
       - internal
-  - title: Detect collisions and keep score
-  - title: Test and tune your game
+  - title: Make it your own
+    challenge: true
     completion:
       - external
-  - title: Challenge
-    challenge: true

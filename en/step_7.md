@@ -1,21 +1,27 @@
-## Challenge
+## Create obstacle clones
 
-Take your game further by changing its look and behaviour.
+Use clones to make a stream of obstacles.
 
-> [!TASK]
->
-> Personalise any choices you borrowed from the example. Your character, obstacle, and backdrop can all be different.
+![Dinosaur5 sprite.](images/Dinosaur5-a.png)
 
-> [!TASK]
->
-> Make the game harder by making the obstacle move faster as the `score`{:class="block3variables"} increases.
+Click on your obstacle sprite.
 
-> [!TASK]
->
-> Add a sound or animation when the character jumps or crashes.
+Hide the original obstacle and wait for one second. Then add a `forever`{:class="block3control"} loop that creates a clone and waits before making the next one.
 
-> [!TASK]
->
-> Share your finished game with a friend and ask them what they think.
+```blocks3
+when green flag clicked
+set rotation style [left-right v]
+set size to (25) %
+go to x: (280) y: (-85)
+point in direction (-90)
++hide
++wait (1) seconds
++forever
+create clone of (myself v)
+wait (1) seconds
+end
+```
 
-> [!SAVE]
+A clone is a copy of a sprite. The original obstacle stays hidden so that only its copies appear.
+
+The clones are hidden too at the moment. You'll show them in the next step.
