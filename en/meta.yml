@@ -5,9 +5,9 @@ listed: true
 pdf: false
 steps:
   - title: Add a character
+  - title: Choose a backdrop
     completion:
       - engaged
-  - title: Choose a backdrop
   - title: Set the starting position
   - title: Set the character's starting look
   - title: Jump into the air
