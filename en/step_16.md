@@ -2,9 +2,9 @@
 
 Delete each clone after it leaves the Stage so old obstacles do not build up.
 
-![Dinosaur5 sprite.](images/Dinosaur5-a.png){:width="100px" height="100px" style="object-fit: contain;"}
-
 Add `delete this clone`{:class="block3control"} after the movement loop.
+
+![Dinosaur5 sprite.](images/Dinosaur5-a.png){:width="100px" height="100px" style="object-fit: contain;"}
 
 ```blocks3
 when I start as a clone

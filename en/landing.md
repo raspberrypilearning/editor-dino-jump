@@ -2,6 +2,8 @@ Build a **Dino Jump** game where a character leaps over moving obstacles and sco
 
 Have a play with the finished game to see what you'll make.
 
+Click the green flag to play, and press **space** to jump!
+
 --- no-print ---
 
 <div class="scratch-preview">

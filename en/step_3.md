@@ -6,6 +6,8 @@ Click on your character sprite, then click the `Code`{:class="block3control"} ta
 
 Add a script to show the character and place it near the bottom-left of the Stage.
 
+![Pico sprite.](images/Pico-a.png){:width="100px" height="100px" style="object-fit: contain;"}
+
 ```blocks3
 when green flag clicked
 show

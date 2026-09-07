@@ -2,11 +2,11 @@
 
 Bring your character back to the ground to finish the jump.
 
-![Pico sprite.](images/Pico-a.png){:width="100px" height="100px" style="object-fit: contain;"}
-
 Add another `glide () secs to x: () y: ()`{:class="block3motion"} block to the bottom of the space-key script.
 
-Use the character's starting `x` and `y` positions as its destination.
+Don't change the `x` and `y` values - they're already correct. The final `x` and `y` values must be the same as the character's starting position in the green flag script.
+
+![Pico sprite.](images/Pico-a.png){:width="100px" height="100px" style="object-fit: contain;"}
 
 ```blocks3
 when [space v] key pressed

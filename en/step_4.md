@@ -2,11 +2,11 @@
 
 Make your character face the right way and start at a suitable size.
 
-![Pico sprite.](images/Pico-a.png){:width="100px" height="100px" style="object-fit: contain;"}
-
 Click on your character sprite.
 
 Add a `point in direction ()`{:class="block3motion"} block and a `set size to () %`{:class="block3looks"} block to the character's starting script.
+
+![Pico sprite.](images/Pico-a.png){:width="100px" height="100px" style="object-fit: contain;"}
 
 ```blocks3
 when green flag clicked

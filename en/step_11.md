@@ -2,11 +2,11 @@
 
 Use clones to make a stream of obstacles.
 
-![Dinosaur5 sprite.](images/Dinosaur5-a.png){:width="100px" height="100px" style="object-fit: contain;"}
-
 In the obstacle's setup script, wait for one second before starting a `forever`{:class="block3control"} loop.
 
 Inside the loop, create a clone and wait for one second before making the next one.
+
+![Dinosaur5 sprite.](images/Dinosaur5-a.png){:width="100px" height="100px" style="object-fit: contain;"}
 
 ```blocks3
 when green flag clicked

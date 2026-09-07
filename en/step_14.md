@@ -2,8 +2,6 @@
 
 Store the movement speed in a variable so it is easy to change later.
 
-![Dinosaur5 sprite.](images/Dinosaur5-a.png){:width="100px" height="100px" style="object-fit: contain;"}
-
 Make a new variable called `speed`{:class="block3variables"}, **For all sprites**.
 
 Untick its checkbox to hide it from the player.
@@ -11,6 +9,8 @@ Untick its checkbox to hide it from the player.
 ![The Make a Variable button in the Variables menu.](images/make-a-variable.png)
 
 In the obstacle's setup script, set `speed`{:class="block3variables"} to `-5`.
+
+![Dinosaur5 sprite.](images/Dinosaur5-a.png){:width="100px" height="100px" style="object-fit: contain;"}
 
 ```blocks3
 when green flag clicked

@@ -2,9 +2,9 @@
 
 Turn the obstacle so it faces towards the character.
 
-![Dinosaur5 sprite.](images/Dinosaur5-a.png){:width="100px" height="100px" style="object-fit: contain;"}
-
 Add a `set rotation style ()`{:class="block3motion"} block and a `point in direction ()`{:class="block3motion"} block to the obstacle's setup script.
+
+![Dinosaur5 sprite.](images/Dinosaur5-a.png){:width="100px" height="100px" style="object-fit: contain;"}
 
 ```blocks3
 when green flag clicked
