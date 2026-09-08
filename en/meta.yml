@@ -11,22 +11,18 @@ steps:
   - title: Set the starting position
   - title: Jump into the air
   - title: Land the jump
-  - title: Size and position the obstacle
+  - title: Add and position the obstacle
   - title: Create obstacle clones
   - title: Move each obstacle
   - title: Remove old obstacles
   - title: Randomise the gaps
   - title: Animate the obstacles
-  - title: Detect a collision
   - title: Stop after a collision
   - title: Add a collision sound
-  - title: Make the score variable
-  - title: Reset the score
+  - title: Add a score
   - title: Score avoided obstacles
   - title: Test the whole game
-  - title: Tune the obstacle speed
-  - title: Tune the gaps
-  - title: Tune the obstacle height
+  - title: Tune your game
     completion:
       - internal
   - title: Make it your own

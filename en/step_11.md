@@ -9,7 +9,7 @@ Inside the clone's `repeat until`{:class="block3control"} loop, add a `next cost
 ```blocks3
 when I start as a clone
 show
-repeat until <(x position) < (-200)>
+repeat until <(x position) < (-240)>
 +next costume
 change x by (-5)
 end

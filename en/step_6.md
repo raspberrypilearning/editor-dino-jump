@@ -1,4 +1,4 @@
-## Size and position the obstacle
+## Add and position the obstacle
 
 Create something for Pico to jump over.
 
@@ -18,4 +18,8 @@ set size to (25) %
 go to x: (280) y: (-85)
 ```
 
-This position puts the obstacle just beyond the right edge of the Stage. You'll tune its height near the end of the project.
+## Now run your code
+
+Click the green flag.
+
+The obstacle shrinks and moves to the right edge of the Stage, ready to travel towards Pico.

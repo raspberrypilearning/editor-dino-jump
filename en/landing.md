@@ -1,4 +1,4 @@
-Build a **Dino Jump** game where a character leaps over moving obstacles and scores a point for every one they avoid.
+Build a **Dino Jump** game where Pico leaps over moving obstacles and scores a point for every one they avoid.
 
 Have a play with the finished game to see what you'll make.
 

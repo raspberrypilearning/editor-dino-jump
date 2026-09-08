@@ -1,6 +1,6 @@
 ## Remove old obstacles
 
-Delete each clone after it reaches the left side, so old obstacles do not build up.
+Delete each clone after it reaches the left edge, so old obstacles do not build up.
 
 Add `delete this clone`{:class="block3control"} after the movement loop.
 
@@ -9,7 +9,7 @@ Add `delete this clone`{:class="block3control"} after the movement loop.
 ```blocks3
 when I start as a clone
 show
-repeat until <(x position) < (-200)>
+repeat until <(x position) < (-240)>
 change x by (-5)
 end
 +delete this clone

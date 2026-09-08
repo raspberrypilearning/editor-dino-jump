@@ -4,13 +4,12 @@ Make Pico start every game in the same place.
 
 Click on the `Pico`{:class="block3looks"} sprite, then click the **Code** tab.
 
-Add a script to show Pico and place it near the bottom-left of the Stage.
+Add a script to place Pico near the bottom-left of the Stage.
 
 ![Pico sprite.](images/Pico-a.png){:width="100px" height="100px" style="object-fit: contain;"}
 
 ```blocks3
 when green flag clicked
-show
 go to x: (-100) y: (-70)
 ```
 

@@ -1,14 +1,14 @@
-## Test the whole game
+## Make it your own
 
-Check that all your scripts work together.
+You've finished the game — now make it your own!
 
-Click the green flag and make sure:
+Choose one idea to try:
 
-- `score`{:class="block3variables"} starts at `0`
-- animated obstacles appear on the right and move towards Pico
-- the time between obstacles changes
-- pressing the space bar makes Pico jump and land
-- avoiding an obstacle adds `1` to `score`{:class="block3variables"}
-- touching an obstacle plays your collision sound and stops the game
+- Change the character, obstacle, or backdrop to give your game a new theme.
+- Change the glide times or the height of the jump to make Pico jump differently.
+- Move the obstacles higher or lower by changing their starting `y` position.
+- Make the obstacles move faster as `score`{:class="block3variables"} increases.
+- Add a sound or costume animation when the character jumps.
+- Add a game-over backdrop before the scripts stop.
 
-Fix any blocks that do not behave as expected, then play again.
+Remember to save your project.

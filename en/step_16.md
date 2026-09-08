@@ -1,23 +1,14 @@
-## Reset the score
+## Test the whole game
 
-Make every game begin with a score of zero.
+Check that all your scripts work together.
 
-In the obstacle's setup script, set `score`{:class="block3variables"} to `0` when the green flag is clicked.
+Click the green flag and make sure:
 
-![Dinosaur5 sprite.](images/Dinosaur5-a.png){:width="100px" height="100px" style="object-fit: contain;"}
+- `score`{:class="block3variables"} starts at `0`
+- animated obstacles appear on the right and move towards Pico
+- the time between obstacles changes
+- pressing the space bar makes Pico jump and land
+- avoiding an obstacle adds `1` to `score`{:class="block3variables"}
+- touching an obstacle plays your collision sound and stops the game
 
-```blocks3
-when green flag clicked
-+set [score v] to (0)
-set size to (25) %
-go to x: (280) y: (-85)
-hide
-forever
-create clone of (myself v)
-wait (pick random (0.8) to (2.4)) seconds
-end
-```
-
-## Now run your code
-
-Click the green flag. The score resets to `0`.
+Fix any blocks that do not behave as expected, then play again.

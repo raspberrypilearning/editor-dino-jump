@@ -1,15 +1,30 @@
-## Make the score variable
+## Score avoided obstacles
 
-Make a score that the player can see.
+Award one point whenever an obstacle passes Pico safely.
+
+In the clone script, add `change score by ()`{:class="block3variables"} after the movement loop and before `delete this clone`{:class="block3control"}.
 
 ![Dinosaur5 sprite.](images/Dinosaur5-a.png){:width="100px" height="100px" style="object-fit: contain;"}
 
-Make a new variable called `score`{:class="block3variables"}, **For all sprites**.
+```blocks3
+when I start as a clone
+show
+repeat until <(x position) < (-240)>
+next costume
+change x by (-5)
+if <touching (Pico v)?> then
+play sound (bite v) until done
+stop [all v]
+end
+end
++change [score v] by (1)
+delete this clone
+```
 
-![The Make a Variable button in the Variables menu.](images/make-a-variable.png)
+The new block only runs after an obstacle reaches the left edge without touching Pico.
 
-Keep its checkbox ticked, so the variable appears on the Stage.
+## Now run your code
 
-![A ticked variable checkbox in the Variables menu.](images/variable-checkbox.png)
+Click the green flag and jump over an obstacle.
 
-You'll reset the score at the start of the game in the next step.
+Your score goes up by one when the obstacle leaves the Stage.

@@ -1,31 +1,19 @@
-## Score avoided obstacles
+## Tune your game
 
-Award one point whenever an obstacle passes Pico safely.
+Choose how hard your game is to play.
 
-In the clone script, add `change score by ()`{:class="block3variables"} after the movement loop and before `delete this clone`{:class="block3control"}.
+**Change the speed**
 
-![Dinosaur5 sprite.](images/Dinosaur5-a.png){:width="100px" height="100px" style="object-fit: contain;"}
+Change the number in the `change x by ()`{:class="block3motion"} block in the clone script.
 
-```blocks3
-when I start as a clone
-show
-repeat until <(x position) < (-200)>
-next costume
-change x by (-5)
-if <touching (Pico v)?> then
-play sound (bite v) until done
-hide
-stop [all v]
-end
-end
-+change [score v] by (1)
-delete this clone
-```
+A more negative number, such as `-7`, makes every obstacle move faster. A number closer to zero makes them move more slowly.
 
-The new block only runs after an obstacle reaches the left side without touching Pico.
+**Change the gaps**
+
+Change the two numbers in `pick random () to ()`{:class="block3operators"}.
+
+Smaller numbers create obstacles more often, while larger numbers leave wider gaps.
 
 ## Now run your code
 
-Click the green flag and jump over an obstacle.
-
-Your score goes up by one when the obstacle leaves the Stage.
+Play the game a few times and keep adjusting the numbers until your game feels fair.
