@@ -9,19 +9,13 @@ steps:
     completion:
       - engaged
   - title: Set the starting position
-  - title: Set the character's starting look
   - title: Jump into the air
   - title: Land the jump
-  - title: Add an obstacle
   - title: Size and position the obstacle
-  - title: Make the obstacle face left
-  - title: Hide the original obstacle
   - title: Create obstacle clones
-  - title: Show each obstacle
-  - title: Randomise the gaps
-  - title: Set the obstacle speed
-  - title: Move the obstacles
+  - title: Move each obstacle
   - title: Remove old obstacles
+  - title: Randomise the gaps
   - title: Animate the obstacles
   - title: Detect a collision
   - title: Stop after a collision

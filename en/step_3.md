@@ -1,10 +1,10 @@
 ## Set the starting position
 
-Make your character start every game in the same place.
+Make Pico start every game in the same place.
 
-Click on your character sprite, then click the `Code`{:class="block3control"} tab.
+Click on the `Pico`{:class="block3looks"} sprite, then click the **Code** tab.
 
-Add a script to show the character and place it near the bottom-left of the Stage.
+Add a script to show Pico and place it near the bottom-left of the Stage.
 
 ![Pico sprite.](images/Pico-a.png){:width="100px" height="100px" style="object-fit: contain;"}
 
@@ -14,10 +14,10 @@ show
 go to x: (-100) y: (-70)
 ```
 
-These values suit Pico. Adjust the `x` and `y` values if your character or backdrop is different.
-
 ## Now run your code
 
-Click the green flag a few times.
+Click the green flag.
 
-Your character appears in the same starting position each time.
+Drag Pico to a different place on the Stage, then click the green flag again.
+
+Pico goes back to its starting position.

@@ -1,8 +1,8 @@
-## Animate the obstacles
+## Score avoided obstacles
 
-Use the obstacle's costumes to animate it as it moves.
+Award one point whenever an obstacle passes Pico safely.
 
-Inside the clone's `repeat until`{:class="block3control"} loop, add a `next costume`{:class="block3looks"} block before the movement block.
+In the clone script, add `change score by ()`{:class="block3variables"} after the movement loop and before `delete this clone`{:class="block3control"}.
 
 ![Dinosaur5 sprite.](images/Dinosaur5-a.png){:width="100px" height="100px" style="object-fit: contain;"}
 
@@ -10,14 +10,22 @@ Inside the clone's `repeat until`{:class="block3control"} loop, add a `next cost
 when I start as a clone
 show
 repeat until <(x position) < (-200)>
-+next costume
-change x by (speed)
+next costume
+change x by (-5)
+if <touching (Pico v)?> then
+play sound (bite v) until done
+hide
+stop [all v]
 end
+end
++change [score v] by (1)
 delete this clone
 ```
 
+The new block only runs after an obstacle reaches the left side without touching Pico.
+
 ## Now run your code
 
-Click the green flag.
+Click the green flag and jump over an obstacle.
 
-Each obstacle changes costume as it travels across the Stage.
+Your score goes up by one when the obstacle leaves the Stage.

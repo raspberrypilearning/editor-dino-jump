@@ -1,23 +1,14 @@
-## Detect a collision
+## Test the whole game
 
-Detect when an obstacle catches the character.
+Check that all your scripts work together.
 
-Inside the clone's movement loop, add an `if then`{:class="block3control"} block that checks whether the obstacle is `touching ()`{:class="block3sensing"} your character.
+Click the green flag and make sure:
 
-If it is, hide the obstacle.
+- `score`{:class="block3variables"} starts at `0`
+- animated obstacles appear on the right and move towards Pico
+- the time between obstacles changes
+- pressing the space bar makes Pico jump and land
+- avoiding an obstacle adds `1` to `score`{:class="block3variables"}
+- touching an obstacle plays your collision sound and stops the game
 
-![Dinosaur5 sprite.](images/Dinosaur5-a.png){:width="100px" height="100px" style="object-fit: contain;"}
-
-```blocks3
-repeat until <(x position) < (-200)>
-next costume
-change x by (speed)
-+if <touching (Pico v)?> then
-hide
-end
-end
-```
-
-Choose your character's name from the `touching ()`{:class="block3sensing"} menu. The example uses `Pico`.
-
-You'll stop the rest of the game after a collision in the next step.
+Fix any blocks that do not behave as expected, then play again.

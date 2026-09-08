@@ -1,20 +1,19 @@
-## Jump into the air
+## Land the jump
 
-Make your character move upwards when the player presses the space bar.
+Bring Pico back to the ground to finish the jump.
 
-Add a new script with a `when space key pressed`{:class="block3events"} block and a `glide () secs to x: () y: ()`{:class="block3motion"} block.
+Add another `glide () secs to x: () y: ()`{:class="block3motion"} block to the bottom of the space-key script.
 
 ![Pico sprite.](images/Pico-a.png){:width="100px" height="100px" style="object-fit: contain;"}
 
 ```blocks3
 when [space v] key pressed
 glide (0.3) secs to x: (-100) y: (80)
++glide (0.7) secs to x: (-100) y: (-70)
 ```
-
-Don't change the `x` value. Choose a higher `y` position for the top of the jump. Whatever your current `y` value is, add about `150` to it. (The example character starts at x: -100, y: -70 and jumps to y: 80.)
 
 ## Now run your code
 
 Press the space bar.
 
-Your character glides upwards and stays in the air. You'll make it land in the next step.
+Pico jumps up and lands back in the same place.

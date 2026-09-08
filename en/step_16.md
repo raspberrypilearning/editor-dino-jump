@@ -1,18 +1,23 @@
-## Remove old obstacles
+## Reset the score
 
-Delete each clone after it leaves the Stage so old obstacles do not build up.
+Make every game begin with a score of zero.
 
-Add `delete this clone`{:class="block3control"} after the movement loop.
+In the obstacle's setup script, set `score`{:class="block3variables"} to `0` when the green flag is clicked.
 
 ![Dinosaur5 sprite.](images/Dinosaur5-a.png){:width="100px" height="100px" style="object-fit: contain;"}
 
 ```blocks3
-when I start as a clone
-show
-repeat until <(x position) < (-200)>
-change x by (speed)
+when green flag clicked
++set [score v] to (0)
+set size to (25) %
+go to x: (280) y: (-85)
+hide
+forever
+create clone of (myself v)
+wait (pick random (0.8) to (2.4)) seconds
 end
-+delete this clone
 ```
 
-The block runs after an obstacle has passed the left side of the Stage.
+## Now run your code
+
+Click the green flag. The score resets to `0`.

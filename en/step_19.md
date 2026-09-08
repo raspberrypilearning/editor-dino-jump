@@ -1,20 +1,11 @@
-## Stop after a collision
+## Tune the obstacle speed
 
-Stop the game when an obstacle touches the character.
+Choose how quickly the obstacles cross the Stage.
 
-Add `stop all`{:class="block3control"} after the `hide`{:class="block3looks"} block inside the collision check.
+Change the number in the `change x by ()`{:class="block3motion"} block in the clone script.
 
-![Dinosaur5 sprite.](images/Dinosaur5-a.png){:width="100px" height="100px" style="object-fit: contain;"}
-
-```blocks3
-if <touching (Pico v)?> then
-hide
-+stop [all v]
-end
-```
+A more negative number, such as `-7`, makes every clone move faster. A number closer to zero makes them move more slowly.
 
 ## Now run your code
 
-Click the green flag and let an obstacle reach your character.
-
-The game stops when they touch.
+Play the game a few times and keep adjusting the number until the obstacles move at the pace you want.

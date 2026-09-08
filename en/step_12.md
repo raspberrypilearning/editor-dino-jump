@@ -1,20 +1,23 @@
-## Show each obstacle
+## Detect a collision
 
-Make each new obstacle clone appear on the Stage.
+Detect when an obstacle catches Pico.
 
-Start a new script on the obstacle sprite with a `when I start as a clone`{:class="block3control"} block.
+Inside the clone's movement loop, add an `if then`{:class="block3control"} block that checks whether the obstacle is `touching ()`{:class="block3sensing"} Pico.
 
-Add a `show`{:class="block3looks"} block so each clone becomes visible.
+If it is, hide the obstacle.
 
 ![Dinosaur5 sprite.](images/Dinosaur5-a.png){:width="100px" height="100px" style="object-fit: contain;"}
 
 ```blocks3
-when I start as a clone
-show
+repeat until <(x position) < (-200)>
+next costume
+change x by (-5)
++if <touching (Pico v)?> then
+hide
+end
+end
 ```
 
-## Now run your code
+Choose `Pico`{:class="block3looks"} from the `touching ()`{:class="block3sensing"} menu.
 
-Click the green flag.
-
-Obstacle clones appear on the right once every second, but they do not move yet.
+You'll stop the rest of the game after a collision in the next step.

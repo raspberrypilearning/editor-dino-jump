@@ -1,13 +1,11 @@
-## Make the score variable
+## Tune the obstacle height
 
-Make a score that the player can see.
+Make sure the obstacles meet Pico at the right height.
 
-![Dinosaur5 sprite.](images/Dinosaur5-a.png){:width="100px" height="100px" style="object-fit: contain;"}
+Change the obstacle's starting `y` position in its `go to x: () y: ()`{:class="block3motion"} block.
 
-Make a new variable called `score`{:class="block3variables"}, **For all sprites**.
+Leave its starting `x` position beyond the right edge so obstacles do not suddenly appear on the Stage.
 
-Keep its checkbox ticked so the variable appears on the Stage.
+## Now run your code
 
-![The Make a Variable button in the Variables menu.](images/make-a-variable.png)
-
-You'll reset the score at the start of the game in the next step.
+Play the game and adjust the `y` position until the obstacles sit on the ground and can be jumped over.

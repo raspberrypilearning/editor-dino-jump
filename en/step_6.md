@@ -1,23 +1,21 @@
-## Land the jump
+## Size and position the obstacle
 
-Bring your character back to the ground to finish the jump.
+Create something for Pico to jump over.
 
-Add another `glide () secs to x: () y: ()`{:class="block3motion"} block to the bottom of the space-key script.
+Click **Choose a Sprite**, then find `Dinosaur5`{:class="block3looks"} in the sprite library and click on it.
 
-Don't change the `x` and `y` values - they're already correct. The final `x` and `y` values must be the same as the character's starting position in the green flag script.
+![Dinosaur5 sprite.](images/Dinosaur5-a.png)
 
-![Pico sprite.](images/Pico-a.png){:width="100px" height="100px" style="object-fit: contain;"}
+Dinosaur5 has several costumes, so it can animate as it moves.
+
+Click on the `Dinosaur5`{:class="block3looks"} sprite, then click the **Code** tab.
+
+Add a script to set its size and position.
 
 ```blocks3
-when [space v] key pressed
-glide (0.3) secs to x: (-100) y: (80)
-+glide (0.7) secs to x: (-100) y: (-70)
+when green flag clicked
+set size to (25) %
+go to x: (280) y: (-85)
 ```
 
-Adjust the glide times and the height of the jump until your sprite jumps the way you want it to.
-
-## Now run your code
-
-Press the space bar.
-
-Your character jumps up and lands back in the same place.
+This position puts the obstacle just beyond the right edge of the Stage. You'll tune its height near the end of the project.

@@ -20,6 +20,7 @@ en/
 │   ├── make-a-variable.png
 │   ├── sounds_tab.png
 │   ├── sprite-choose.png
+│   ├── stage-pico-desert.png
 │   └── variable-checkbox.png
 ├── resources/
 │   └── .keep
@@ -31,7 +32,7 @@ en/
 ├── meta.yml
 ├── step_1.md
 ├── ...
-└── step_28.md
+└── step_22.md
 ```
 
 ## Directory and File Descriptions
@@ -64,6 +65,6 @@ Defines the project title, description, hero image, ordered step titles, and com
 
 Introduces the project and shows a preview of the finished game.
 
-### `step_1.md` to `step_28.md`
+### `step_1.md` to `step_22.md`
 
 Contain the step-by-step instructions for learners. Each file focuses on one small outcome.

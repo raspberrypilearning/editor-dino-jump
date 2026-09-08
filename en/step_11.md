@@ -1,25 +1,23 @@
-## Create obstacle clones
+## Animate the obstacles
 
-Use clones to make a stream of obstacles.
+Use the obstacle's costumes to animate it as it moves.
 
-In the obstacle's setup script, wait for one second before starting a `forever`{:class="block3control"} loop.
-
-Inside the loop, create a clone and wait for one second before making the next one.
+Inside the clone's `repeat until`{:class="block3control"} loop, add a `next costume`{:class="block3looks"} block before the movement block.
 
 ![Dinosaur5 sprite.](images/Dinosaur5-a.png){:width="100px" height="100px" style="object-fit: contain;"}
 
 ```blocks3
-when green flag clicked
-set rotation style [left-right v]
-set size to (25) %
-go to x: (280) y: (-85)
-point in direction (-90)
-hide
-+wait (1) seconds
-+forever
-create clone of (myself v)
-wait (1) seconds
+when I start as a clone
+show
+repeat until <(x position) < (-200)>
++next costume
+change x by (-5)
 end
+delete this clone
 ```
 
-A clone is a copy of a sprite. Each clone starts hidden because the original obstacle is hidden.
+## Now run your code
+
+Click the green flag.
+
+Each obstacle changes costume as it travels across the Stage.

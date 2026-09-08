@@ -1,17 +1,27 @@
-## Size and position the obstacle
+## Move each obstacle
 
-Place the obstacle just outside the right side of the Stage.
+Make each new clone appear and travel across the Stage.
 
-Click on your obstacle sprite, then click the `Code`{:class="block3control"} tab.
+Start a new script on the obstacle sprite with a `when I start as a clone`{:class="block3control"} block.
 
-Add a script to set its size and position.
+Add a `show`{:class="block3looks"} block, then a `repeat until`{:class="block3control"} loop that checks whether the clone's `x position`{:class="block3motion"} is less than `-200`.
+
+Inside the loop, change its x position by `-5`.
 
 ![Dinosaur5 sprite.](images/Dinosaur5-a.png){:width="100px" height="100px" style="object-fit: contain;"}
 
 ```blocks3
-when green flag clicked
-set size to (25) %
-go to x: (280) y: (-85)
+when I start as a clone
+show
+repeat until <(x position) < (-200)>
+change x by (-5)
+end
 ```
 
-The example position puts the obstacle just beyond the right edge. You'll tune its height near the end of the project.
+A negative number in `change x by ()`{:class="block3motion"} moves the clone to the left.
+
+## Now run your code
+
+Click the green flag.
+
+Each obstacle appears on the right and moves across the Stage towards Pico, then stops near the left edge.

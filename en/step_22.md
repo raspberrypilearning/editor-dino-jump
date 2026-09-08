@@ -1,27 +1,14 @@
-## Reset the score
+## Make it your own
 
-Make every game begin with a score of zero.
+You've finished the game — now make it your own!
 
-In the obstacle's setup script, set `score`{:class="block3variables"} to `0` when the green flag is clicked.
+Choose one idea to try:
 
-![Dinosaur5 sprite.](images/Dinosaur5-a.png){:width="100px" height="100px" style="object-fit: contain;"}
+- Change the character, obstacle, or backdrop to give your game a new theme.
+- Change the glide times or the height of the jump to make Pico jump differently.
+- Make the obstacles move faster as `score`{:class="block3variables"} increases.
+- Add a sound or costume animation when the character jumps.
+- Add a game-over backdrop before the scripts stop.
+- Share your finished game with a friend and ask what they think.
 
-```blocks3
-when green flag clicked
-set rotation style [left-right v]
-set [speed v] to (-5)
-+set [score v] to (0)
-set size to (25) %
-go to x: (280) y: (-85)
-point in direction (-90)
-hide
-wait (1) seconds
-forever
-create clone of (myself v)
-wait (pick random (0.8) to (2.4)) seconds
-end
-```
-
-## Now run your code
-
-Click the green flag. The score resets to `0`.
+Remember to save your project.

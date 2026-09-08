@@ -1,30 +1,27 @@
-## Set the obstacle speed
+## Add a collision sound
 
-Store the movement speed in a variable so it is easy to change later.
+Play a sound when an obstacle catches Pico.
 
-Make a new variable called `speed`{:class="block3variables"}, **For all sprites**.
+Click on the `Dinosaur5`{:class="block3looks"} sprite, then open the `Sounds`{:class="block3sound"} tab.
 
-Untick its checkbox to hide it from the player.
+`Dinosaur5` already includes the `bite`{:class="block3sound"} sound. You can use it, or choose a different collision sound.
 
-![The Make a Variable button in the Variables menu.](images/make-a-variable.png)
+![The Sounds tab at the top-left of the Scratch editor.](images/sounds_tab.png)
 
-In the obstacle's setup script, set `speed`{:class="block3variables"} to `-5`.
+Add a `play sound () until done`{:class="block3sound"} block inside the collision check, before `hide`{:class="block3looks"}.
 
 ![Dinosaur5 sprite.](images/Dinosaur5-a.png){:width="100px" height="100px" style="object-fit: contain;"}
 
 ```blocks3
-when green flag clicked
-set rotation style [left-right v]
-+set [speed v] to (-5)
-set size to (25) %
-go to x: (280) y: (-85)
-point in direction (-90)
+if <touching (Pico v)?> then
++play sound (bite v) until done
 hide
-wait (1) seconds
-forever
-create clone of (myself v)
-wait (pick random (0.8) to (2.4)) seconds
+stop [all v]
 end
 ```
 
-A negative speed will make the clones move to the left.
+## Now run your code
+
+Click the green flag and let an obstacle catch Pico.
+
+Your collision sound plays until it finishes, then the game stops.
