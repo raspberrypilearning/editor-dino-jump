@@ -2,6 +2,8 @@
 
 Delete each clone after it reaches the left edge, so old obstacles do not build up.
 
+<h2 class="c-project-heading--explainer">What you need to do</h2>
+
 Add `delete this clone`{:class="block3control"} after the movement loop.
 
 ![Dinosaur5 sprite.](images/Dinosaur5-a.png){:width="100px" height="100px" style="object-fit: contain;"}

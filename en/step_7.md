@@ -2,11 +2,17 @@
 
 Use clones to make a stream of obstacles.
 
+<h2 class="c-project-heading--explainer">What you need to do</h2>
+
+## Step 1
+
 **Create the clones**
 
 Add a `forever`{:class="block3control"} loop to the end of the obstacle's script.
 
 Inside the loop, create a clone and wait for one second before making the next one.
+
+## Step 2
 
 **Hide the original sprite**
 

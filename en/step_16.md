@@ -2,6 +2,10 @@
 
 Check that all your scripts work together.
 
+<h2 class="c-project-heading--explainer">What you need to do</h2>
+
+## Now run your code
+
 Click the green flag and make sure:
 
 - `score`{:class="block3variables"} starts at `0`

@@ -2,6 +2,8 @@
 
 Make Pico start every game in the same place.
 
+<h2 class="c-project-heading--explainer">What you need to do</h2>
+
 Click on the `Pico`{:class="block3looks"} sprite, then click the **Code** tab.
 
 Add a script to place Pico near the bottom-left of the Stage.

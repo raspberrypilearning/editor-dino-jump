@@ -2,6 +2,8 @@
 
 Make the time between obstacles less predictable.
 
+<h2 class="c-project-heading--explainer">What you need to do</h2>
+
 In the obstacle's `forever`{:class="block3control"} loop, replace the `wait () seconds`{:class="block3control"} block with one that contains a `pick random () to ()`{:class="block3operators"} block.
 
 ![Dinosaur5 sprite.](images/Dinosaur5-a.png){:width="100px" height="100px" style="object-fit: contain;"}

@@ -2,6 +2,8 @@
 
 Play a sound when an obstacle catches Pico.
 
+<h2 class="c-project-heading--explainer">What you need to do</h2>
+
 Click on the `Dinosaur5`{:class="block3looks"} sprite, then open the `Sounds`{:class="block3sound"} tab.
 
 `Dinosaur5` already includes the `bite`{:class="block3sound"} sound. You can use it, or choose a different collision sound.

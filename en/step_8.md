@@ -2,6 +2,8 @@
 
 Make each new clone appear and travel across the Stage.
 
+<h2 class="c-project-heading--explainer">What you need to do</h2>
+
 Start a new script on the obstacle sprite with a `when I start as a clone`{:class="block3control"} block.
 
 Add a `show`{:class="block3looks"} block, then a `repeat until`{:class="block3control"} loop that checks whether the clone's `x position`{:class="block3motion"} is less than `-240`.

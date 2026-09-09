@@ -3,14 +3,15 @@ hero_image: images/banner.png
 description: Make a jumping game in this Code Club arcade project.
 listed: true
 pdf: false
+landing: true
 steps:
   - title: Add a character
   - title: Choose a backdrop
-    completion:
-      - engaged
   - title: Set the starting position
   - title: Jump into the air
   - title: Land the jump
+    completion:
+      - engaged
   - title: Add and position the obstacle
   - title: Create obstacle clones
   - title: Move each obstacle
@@ -21,11 +22,11 @@ steps:
   - title: Add a collision sound
   - title: Add a score
   - title: Score avoided obstacles
+    completion:
+      - internal
   - title: Test the whole game
   - title: Tune your game
     completion:
-      - internal
+      - external
   - title: Make it your own
     challenge: true
-    completion:
-      - external

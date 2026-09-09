@@ -2,6 +2,8 @@
 
 Create something for Pico to jump over.
 
+<h2 class="c-project-heading--explainer">What you need to do</h2>
+
 Click **Choose a Sprite**, then find `Dinosaur5`{:class="block3looks"} in the sprite library and click on it.
 
 ![Dinosaur5 sprite.](images/Dinosaur5-a.png)

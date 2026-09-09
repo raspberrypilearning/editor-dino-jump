@@ -2,6 +2,8 @@
 
 End the game when an obstacle catches Pico.
 
+<h2 class="c-project-heading--explainer">What you need to do</h2>
+
 Inside the clone's movement loop, add an `if then`{:class="block3control"} block that checks whether the obstacle is `touching ()`{:class="block3sensing"} Pico.
 
 If it is, stop all the scripts.

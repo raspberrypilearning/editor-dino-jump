@@ -2,11 +2,15 @@
 
 Choose where your jumping game will take place.
 
+<h2 class="c-project-heading--explainer">What you need to do</h2>
+
 Click **Choose a Backdrop**.
 
 ![The Choose a Backdrop button in the bottom-right of the Scratch editor.](images/backdrop-choose.png)
 
 Find `Desert`{:class="block3looks"} in the backdrop library and click on it.
+
+## Now run your code
 
 Your Stage now shows Pico in the desert.
 

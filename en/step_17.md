@@ -2,11 +2,17 @@
 
 Choose how hard your game is to play.
 
+<h2 class="c-project-heading--explainer">What you need to do</h2>
+
+## Step 1
+
 **Change the speed**
 
 Change the number in the `change x by ()`{:class="block3motion"} block in the clone script.
 
 A more negative number, such as `-7`, makes every obstacle move faster. A number closer to zero makes them move more slowly.
+
+## Step 2
 
 **Change the gaps**
 

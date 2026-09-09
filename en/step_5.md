@@ -2,6 +2,8 @@
 
 Bring Pico back to the ground to finish the jump.
 
+<h2 class="c-project-heading--explainer">What you need to do</h2>
+
 Add another `glide () secs to x: () y: ()`{:class="block3motion"} block to the bottom of the space-key script.
 
 ![Pico sprite.](images/Pico-a.png){:width="100px" height="100px" style="object-fit: contain;"}

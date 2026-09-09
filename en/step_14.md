@@ -2,6 +2,10 @@
 
 Make a score that the player can see, and reset it at the start of every game.
 
+<h2 class="c-project-heading--explainer">What you need to do</h2>
+
+## Step 1
+
 **Make the variable**
 
 Make a new variable called `score`{:class="block3variables"}, **For all sprites**.
@@ -11,6 +15,8 @@ Make a new variable called `score`{:class="block3variables"}, **For all sprites*
 Keep its checkbox ticked, so the variable appears on the Stage.
 
 ![A ticked variable checkbox in the Variables menu.](images/variable-checkbox.png)
+
+## Step 2
 
 **Reset it at the start**
 
