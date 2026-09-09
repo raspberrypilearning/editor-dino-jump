@@ -1,4 +1,4 @@
 name: "Dino Jump completed"
 identifier: "editor-dino-jump-complete"
 type: 'code_editor_scratch'
-build: false
+build: true
