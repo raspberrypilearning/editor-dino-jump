@@ -1,24 +1,24 @@
-## Remove old obstacles
+## Remove old clones
 
-Delete each clone after it reaches the left edge, so old obstacles do not build up.
+![Dinosaur5.](images/Dinosaur5-a.png){:width="100px" height="100px" style="object-fit: contain;"}
 
-<h2 class="c-project-heading--explainer">What you need to do</h2>
-
-Add `delete this clone`{:class="block3control"} after the movement loop.
-
-![Dinosaur5 sprite.](images/Dinosaur5-a.png){:width="100px" height="100px" style="object-fit: contain;"}
+On **Dinosaur5**, add `delete this clone`{:class="block3control"} **below** the movement loop, outside it.
 
 ```blocks3
 when I start as a clone
 show
-repeat until <(x position) < (-240)>
-change x by (-5)
+repeat until <(x position) < (-230)>
+    change x by (-5)
 end
 +delete this clone
 ```
 
+## Tip
+
+Use `-230`, not `-240`. Scratch keeps a little of each sprite on the Stage, so a small clone can get stuck before its `x position`{:class="block3motion"} reaches `-240`.
+
 ## Now run your code
 
-Click the green flag.
+Click the green flag to clear the old clones and start again.
 
-Each obstacle disappears once it has passed Pico, instead of piling up on the left.
+Watch several **Dinosaur5** clones cross the Stage. Each should disappear near the left edge, with none left behind.

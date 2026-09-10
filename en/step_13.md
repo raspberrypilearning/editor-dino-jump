@@ -1,28 +1,28 @@
 ## Add a collision sound
 
-Play a sound when an obstacle catches Pico.
+![Dinosaur5.](images/Dinosaur5-a.png){:width="100px" height="100px" style="object-fit: contain;"}
 
-<h2 class="c-project-heading--explainer">What you need to do</h2>
+## Step 1
 
-Click on the `Dinosaur5`{:class="block3looks"} sprite, then open the `Sounds`{:class="block3sound"} tab.
+![The Sounds tab selected at the top-left of the Scratch editor.](images/sounds_tab.png){:width="313px"}
 
-`Dinosaur5` already includes the `bite`{:class="block3sound"} sound. You can use it, or choose a different collision sound.
+With **Dinosaur5** selected, open the **Sounds** tab. Select **bite** and click the play button to hear it.
 
-![The Sounds tab at the top-left of the Scratch editor.](images/sounds_tab.png)
+## Step 2
 
-Add a `play sound () until done`{:class="block3sound"} block inside the collision check, before `stop all`{:class="block3control"}.
+![The Code tab selected at the top-left of the Scratch editor.](images/code_tab.png){:width="313px"}
 
-![Dinosaur5 sprite.](images/Dinosaur5-a.png){:width="100px" height="100px" style="object-fit: contain;"}
+Return to the **Code** tab. Inside the collision check, add `play sound () until done`{:class="block3sound"} before `stop all`{:class="block3control"}. Choose **bite** in the sound dropdown.
 
 ```blocks3
 if <touching (Pico v)?> then
-+play sound (bite v) until done
-stop [all v]
++    play sound (bite v) until done
+    stop [all v]
 end
 ```
 
 ## Now run your code
 
-Click the green flag and let an obstacle catch Pico.
+Click the green flag and let a **Dinosaur5** clone catch **Pico**.
 
-Your collision sound plays until it finishes, then the game stops.
+**bite** plays until it finishes, then the game stops.

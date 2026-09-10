@@ -1,27 +1,30 @@
 ## Stop after a collision
 
-End the game when an obstacle catches Pico.
+![Dinosaur5.](images/Dinosaur5-a.png){:width="100px" height="100px" style="object-fit: contain;"}
 
-<h2 class="c-project-heading--explainer">What you need to do</h2>
+In **Dinosaur5**'s movement loop, add an `if then`{:class="block3control"} block with a `touching ()`{:class="block3sensing"} condition.
 
-Inside the clone's movement loop, add an `if then`{:class="block3control"} block that checks whether the obstacle is `touching ()`{:class="block3sensing"} Pico.
-
-If it is, stop all the scripts.
-
-![Dinosaur5 sprite.](images/Dinosaur5-a.png){:width="100px" height="100px" style="object-fit: contain;"}
+Choose **Pico** in the dropdown. Put `stop all`{:class="block3control"} inside the `if`{:class="block3control"} block.
 
 ```blocks3
-repeat until <(x position) < (-240)>
-next costume
-change x by (-5)
-+if <touching (Pico v)?> then
-stop [all v]
+when I start as a clone
+show
+repeat until <(x position) < (-230)>
+    next costume
+    change x by (-5)
++    if <touching (Pico v)?> then
+        stop [all v]
+    end
 end
-end
+delete this clone
 ```
+
+## Tip
+
+The `touching ()`{:class="block3sensing"} block starts with **mouse-pointer** selected. Click its dropdown arrow and change this to **Pico**.
 
 ## Now run your code
 
-Click the green flag and let an obstacle reach Pico.
+Click the green flag and let a **Dinosaur5** clone reach **Pico**. The game should stop when they touch.
 
-The game stops when they touch.
+Restart and try jumping over a clone. The game should keep running when **Pico** clears it.

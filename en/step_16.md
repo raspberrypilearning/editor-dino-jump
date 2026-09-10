@@ -1,18 +1,20 @@
-## Test the whole game
+## Challenge
 
-Check that all your scripts work together.
+![Dinosaur5.](images/Dinosaur5-a.png){:width="100px" height="100px" style="object-fit: contain;"}
 
-<h2 class="c-project-heading--explainer">What you need to do</h2>
+Choose one idea to try:
 
-## Now run your code
+- Change the speed in **Dinosaur5**'s clone script using `change x by ()`{:class="block3motion"}. Try `-7` for faster clones or `-4` for slower ones.
+- Change the gaps using `pick random () to ()`{:class="block3operators"} in **Dinosaur5**'s setup script. Larger numbers leave wider gaps. Keep the shortest gap at least `1.2` seconds while you practise, so **Pico** has time to land.
+- Replace **Pico**, **Dinosaur5** or **Desert** to give your game a new theme.
+- Change the glide times or height of **Pico**'s jump.
+- Move **Dinosaur5** higher or lower by changing its starting `y` position.
+- Make the clones move faster as `score`{:class="block3variables"} increases.
+- Add a sound or costume animation when **Pico** jumps.
+- Add a game-over backdrop before the scripts stop.
 
-Click the green flag and make sure:
+## Try your change
 
-- `score`{:class="block3variables"} starts at `0`
-- animated obstacles appear on the right and move towards Pico
-- the time between obstacles changes
-- pressing the space bar makes Pico jump and land
-- avoiding an obstacle adds `1` to `score`{:class="block3variables"}
-- touching an obstacle plays your collision sound and stops the game
+Change one thing at a time and play a few rounds. Check that your idea works and that **Pico** can still jump over the clones and land between them.
 
-Fix any blocks that do not behave as expected, then play again.
+Remember to save your project.

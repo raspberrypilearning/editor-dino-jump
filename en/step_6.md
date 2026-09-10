@@ -1,27 +1,25 @@
-## Add and position the obstacle
+## Add Dinosaur5
 
-Create something for Pico to jump over.
+![Dinosaur5.](images/Dinosaur5-a.png){:width="100px" height="100px" style="object-fit: contain;"}
 
-<h2 class="c-project-heading--explainer">What you need to do</h2>
+## Step 1
 
-Click **Choose a Sprite**, then find `Dinosaur5`{:class="block3looks"} in the sprite library and click on it.
+Click **Choose a Sprite**, find **Dinosaur5** and add it to your project.
 
-![Dinosaur5 sprite.](images/Dinosaur5-a.png)
+## Step 2
 
-Dinosaur5 has several costumes, so it can animate as it moves.
+![Dinosaur5.](images/Dinosaur5-a.png){:width="100px" height="100px" style="object-fit: contain;"}
 
-Click on the `Dinosaur5`{:class="block3looks"} sprite, then click the **Code** tab.
-
-Add a script to set its size and position.
+On **Dinosaur5**, add this script to shrink it and put it near the right edge of the Stage.
 
 ```blocks3
 when green flag clicked
 set size to (25) %
-go to x: (280) y: (-85)
+go to x: (230) y: (-115)
 ```
 
 ## Now run your code
 
-Click the green flag.
+Click the green flag. **Dinosaur5** should be much smaller than **Pico**, with its feet at about the same height.
 
-The obstacle shrinks and moves to the right edge of the Stage, ready to travel towards Pico.
+If it appears near **Pico**'s head, check that its size is `25%` and its `y` position is `-115`.

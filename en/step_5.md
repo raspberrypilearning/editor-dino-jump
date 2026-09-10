@@ -1,12 +1,10 @@
 ## Land the jump
 
-Bring Pico back to the ground to finish the jump.
+![Pico.](images/Pico-a.png){:width="100px" height="100px" style="object-fit: contain;"}
 
-<h2 class="c-project-heading--explainer">What you need to do</h2>
+On **Pico**, add another `glide () secs to x: () y: ()`{:class="block3motion"} block to the bottom of the space-key script.
 
-Add another `glide () secs to x: () y: ()`{:class="block3motion"} block to the bottom of the space-key script.
-
-![Pico sprite.](images/Pico-a.png){:width="100px" height="100px" style="object-fit: contain;"}
+Use the same landing position as the green-flag script.
 
 ```blocks3
 when [space v] key pressed
@@ -16,6 +14,6 @@ glide (0.3) secs to x: (-100) y: (80)
 
 ## Now run your code
 
-Press the space bar.
+Click the green flag, then tap the space bar once. **Pico** jumps up and lands at `y: -70`.
 
-Pico jumps up and lands back in the same place.
+Wait for **Pico** to land before tapping space again.

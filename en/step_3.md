@@ -1,24 +1,17 @@
 ## Set the starting position
 
-Make Pico start every game in the same place.
+![Pico.](images/Pico-a.png){:width="100px" height="100px" style="object-fit: contain;"}
 
-<h2 class="c-project-heading--explainer">What you need to do</h2>
-
-Click on the `Pico`{:class="block3looks"} sprite, then click the **Code** tab.
-
-Add a script to place Pico near the bottom-left of the Stage.
-
-![Pico sprite.](images/Pico-a.png){:width="100px" height="100px" style="object-fit: contain;"}
+On **Pico**, add a script to set its size and place it near the bottom-left of the Stage.
 
 ```blocks3
 when green flag clicked
+set size to (100) %
 go to x: (-100) y: (-70)
 ```
 
 ## Now run your code
 
-Click the green flag.
+Click the green flag. Drag **Pico** somewhere else, then click the green flag again.
 
-Drag Pico to a different place on the Stage, then click the green flag again.
-
-Pico goes back to its starting position.
+**Pico** returns to `x: -100`, `y: -70` at `100%` size.

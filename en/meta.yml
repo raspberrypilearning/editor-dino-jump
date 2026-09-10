@@ -12,21 +12,19 @@ steps:
   - title: Land the jump
     completion:
       - engaged
-  - title: Add and position the obstacle
-  - title: Create obstacle clones
-  - title: Move each obstacle
-  - title: Remove old obstacles
+  - title: Add an obstacle
+  - title: Create clones
+  - title: Move each clone
+  - title: Remove old clones
   - title: Randomise the gaps
-  - title: Animate the obstacles
+  - title: Animate the clones
   - title: Stop after a collision
   - title: Add a collision sound
   - title: Add a score
-  - title: Score avoided obstacles
+  - title: Score each successful jump
     completion:
       - internal
-  - title: Test the whole game
-  - title: Tune your game
+  - title: Challenge
     completion:
       - external
-  - title: Make it your own
     challenge: true

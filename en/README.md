@@ -17,6 +17,7 @@ en/
 │   ├── Pico-a.png
 │   ├── backdrop-choose.png
 │   ├── banner.png
+│   ├── code_tab.png
 │   ├── make-a-variable.png
 │   ├── sounds_tab.png
 │   ├── sprite-choose.png
@@ -32,7 +33,7 @@ en/
 ├── meta.yml
 ├── step_1.md
 ├── ...
-└── step_18.md
+└── step_16.md
 ```
 
 ## Directory and File Descriptions
@@ -65,6 +66,6 @@ Defines the project title, description, hero image, ordered step titles, and com
 
 Introduces the project and shows a preview of the finished game.
 
-### `step_1.md` to `step_18.md`
+### `step_1.md` to `step_16.md`
 
-Contain the step-by-step instructions for learners. Each file focuses on one small outcome.
+Contain 15 build steps and a final Challenge with tuning and extension ideas.
